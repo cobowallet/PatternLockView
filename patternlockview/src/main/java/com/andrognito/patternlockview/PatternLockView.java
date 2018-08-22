@@ -172,7 +172,7 @@ public class PatternLockView extends View {
                     DEFAULT_PATTERN_DOT_COUNT);
             mAspectRatioEnabled = typedArray.getBoolean(R.styleable.PatternLockView_aspectRatioEnabled,
                     false);
-            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatio,
+            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatioType,
                     ASPECT_RATIO_SQUARE);
             mPathWidth = (int) typedArray.getDimension(R.styleable.PatternLockView_pathWidth,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_path_width));

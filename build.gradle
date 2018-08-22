@@ -3,28 +3,28 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.android.tools.build:gradle:3.1.4'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
+        google()
     }
 }
 
 ext {
     minSdkVersion = 14
-    targetSdkVersion = 25
-    compileSdkVersion = 25
-    buildToolsVersion = '25.0.2'
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
 
     // dependencies
-    supportV7 = 'com.android.support:appcompat-v7:25.3.0'
+    supportV7 = 'com.android.support:appcompat-v7:27.1.1'
     rxJava = 'io.reactivex.rxjava2:rxjava:2.0.2'
     rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.0'
 }
